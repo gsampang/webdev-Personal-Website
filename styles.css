@@ -1,0 +1,66 @@
+:root {
+  --white: #ffffff;
+  --gray1: #333333;
+  --gray2: #555555;
+  --gray3: #cccccc;
+  --gray4: #aaaaaa;
+
+  --black: #080808;
+  --teal: #006060;
+  --lightteal: #008080;
+  --purple: #800080;
+  --navy: #000080;
+  --cyan: #17a2b8;
+  --violetred: #c71585;
+  --red: #ff0000;
+  --orange: #ffa500;
+  --green: #006400;
+}
+
+body {
+  background: rgb(246, 219, 231);
+  background: radial-gradient(
+    circle,
+    rgba(246, 219, 231, 1) 0%,
+    rgba(194, 214, 238, 1) 100%
+  );
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Code for exercise 01-flex */
+li {
+  display: flex;
+}
+
+.flex-container {
+  display: flex;
+  background-color: var(--purple);
+  justify-content: flex-end;
+}
+
+.flex-item {
+  background-color: var(--purple);
+  border-style: solid;
+  border-color: var(--purple);
+  text-align: left;
+  padding: 20px;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.flex-item:hover {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
+.flex-item:active {
+  background-color: var(--orange);
+  border-color: var(--orange);
+}
+
+.flex-item:focus {
+  border-color: var(--orange);
+}
