@@ -25,12 +25,14 @@ h1 {
   font-size: 2rem;
 }
 
-/* About Styling */
 .container {
   width: 50vw;
-  margin: 0 auto;
+  margin: 1rem auto;
+  padding: 2%;
   background-color: var(--primary);
 }
+
+/* About Styling */
 
 .headshot {
   display: block;
