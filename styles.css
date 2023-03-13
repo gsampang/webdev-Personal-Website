@@ -1,21 +1,13 @@
 /* colors */
 :root {
-  --white: #ffffff;
-  --gray1: #333333;
-  --gray2: #555555;
-  --gray3: #cccccc;
-  --gray4: #aaaaaa;
+  /* From: https://www.canva.com/p/templates/EAFKyRBePCI-black-and-blue-modern-company-profile-presentation/ */
+  --background: #040307;
+  --primary: #0f48a8;
+  --secondary: #5472fd;
+  --text: #bdc7d9;
 
-  --black: #080808;
-  --teal: #006060;
-  --lightteal: #008080;
-  --purple: #800080;
-  --navy: #000080;
-  --cyan: #17a2b8;
-  --violetred: #c71585;
-  --red: #ff0000;
-  --orange: #ffa500;
-  --green: #006400;
+  /* Not from the site, added it myself */
+  --tertiary: #ffa500;
 }
 
 /* General Styling */
@@ -51,35 +43,35 @@ li {
 
 .flex-container {
   display: flex;
-  background-color: var(--purple);
+  background-color: var(--primary);
   justify-content: flex-end;
 }
 
 .flex-item {
-  background-color: var(--purple);
+  background-color: var(--primary);
   border-style: solid;
-  border-color: var(--purple);
+  border-color: var(--primary);
   text-align: left;
   padding: 20px;
   text-decoration: none;
-  color: var(--white);
+  color: var(--text);
 }
 
 .flex-item:hover {
-  background-color: var(--green);
-  border-color: var(--green);
-  color: var(--white);
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+  color: var(--text);
 }
 
 .flex-item:active {
-  background-color: var(--orange);
-  border-color: var(--orange);
-  color: var(--white);
+  background-color: var(--tertiary);
+  border-color: var(--tertiary);
+  color: var(--text);
 }
 
 .flex-item:focus {
-  border-color: var(--orange);
-  color: var(--white);
+  border-color: var(--tertiary);
+  color: var(--text);
 }
 
 /* Contact Styling */
