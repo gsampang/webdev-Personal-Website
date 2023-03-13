@@ -68,15 +68,18 @@ li {
 .flex-item:hover {
   background-color: var(--green);
   border-color: var(--green);
+  color: var(--white);
 }
 
 .flex-item:active {
   background-color: var(--orange);
   border-color: var(--orange);
+  color: var(--white);
 }
 
 .flex-item:focus {
   border-color: var(--orange);
+  color: var(--white);
 }
 
 /* Contact Styling */
