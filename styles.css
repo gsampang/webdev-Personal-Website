@@ -4,30 +4,32 @@
   --background: #040307;
   --primary: #0f48a8;
   --secondary: #5472fd;
-  --text: #bdc7d9;
 
   /* Not from the site, added it myself */
+  --text: #ffffff;
   --tertiary: #ffa500;
 }
 
 /* General Styling */
-/* body {
-  background: rgb(246, 219, 231);
-  background: radial-gradient(
-    circle,
-    rgba(246, 219, 231, 1) 0%,
-    rgba(194, 214, 238, 1) 100%
-  );
-} */
+body {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.2em;
+  background: var(--background);
+  color: var(--text);
+}
 
 h1 {
   text-align: center;
+  background-color: var(--secondary);
+  color: var(--text);
+  font-size: 2rem;
 }
 
 /* About Styling */
 .container {
   width: 50vw;
   margin: 0 auto;
+  background-color: var(--primary);
 }
 
 .headshot {
