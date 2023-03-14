@@ -39,6 +39,10 @@ h2 {
   background-color: var(--primary);
 }
 
+figcaption {
+  font-style: italic;
+}
+
 /* About Styling */
 
 .headshot {
