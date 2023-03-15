@@ -13,7 +13,7 @@ ulElem.appendChild(liElem1);
 
 let aElem1 = document.createElement("a");
 aElem1.classList = "flex-item item1";
-aElem1.href = "about.html";
+aElem1.href = "index.html";
 aElem1.textContent = "About";
 liElem1.appendChild(aElem1);
 
