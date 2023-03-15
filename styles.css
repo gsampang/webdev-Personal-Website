@@ -32,9 +32,7 @@ h2 {
   padding: 2%;
 }
 
-.container {
-  width: 50vw;
-  margin: 1rem auto;
+.my-container {
   padding: 2%;
   background-color: var(--primary);
 }
@@ -43,12 +41,60 @@ figcaption {
   font-style: italic;
 }
 
+/* Grid Styling */
+.grid-container {
+  display: grid;
+  gap: 10px;
+  margin: 0% 5%;
+}
+
 /* About Styling */
 
 .headshot {
   display: block;
   border-radius: 50%;
   margin: 0 auto;
+}
+
+.item1-a {
+  grid-area: picture;
+}
+
+.item2-a {
+  grid-area: info1;
+}
+
+.item3-a {
+  grid-area: info2;
+}
+
+.item4-a {
+  grid-area: info3;
+}
+
+.item5-a {
+  grid-area: info4;
+}
+
+.grid-a {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "picture"
+    "info1"
+    "info2"
+    "info3"
+    "info4";
+}
+
+@media (min-width: 768px) {
+  .grid-a {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "picture info1"
+      "info2 info2"
+      "info3 info3"
+      "info4 info4";
+  }
 }
 
 /* Navbar Styling */
@@ -95,4 +141,93 @@ li {
   margin: 1rem auto;
   padding: 2%;
   background-color: var(--primary);
+}
+
+/* Previous Work Styling */
+.item1-p-w {
+  grid-area: skills;
+}
+
+.item2-p-w {
+  grid-area: education;
+}
+
+.item3-p-w {
+  grid-area: work;
+}
+
+.item4-p-w {
+  grid-area: tech;
+}
+
+.grid-p-w {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "skills"
+    "education"
+    "work"
+    "tech";
+}
+
+@media (min-width: 414px) {
+  .grid-p-w {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "skills"
+      "education"
+      "work"
+      "tech";
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-p-w {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "skills education"
+      "work education"
+      "tech education";
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-p-w {
+    grid-template-columns: 5fr 3fr;
+    grid-template-areas:
+      "skills education"
+      "work education"
+      "tech education";
+  }
+}
+
+/* Projects Styling */
+.item1-p {
+  grid-area: AI;
+}
+
+.item2-p {
+  grid-area: CAP;
+}
+
+.grid-p {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "AI"
+    "CAP";
+}
+
+@media (min-width: 414px) {
+  .grid-p {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "AI"
+      "CAP";
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-p {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "AI CAP";
+  }
 }
