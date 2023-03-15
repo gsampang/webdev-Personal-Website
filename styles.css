@@ -12,7 +12,7 @@
 
 /* General Styling */
 body {
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-size: 1.2em;
   background: var(--background);
   color: var(--text);
@@ -22,7 +22,10 @@ h1 {
   text-align: center;
   background-color: var(--secondary);
   color: var(--text);
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5%;
 }
 
 h2 {
@@ -105,7 +108,7 @@ li {
 .flex-container {
   display: flex;
   background-color: var(--primary);
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .flex-item {
@@ -201,6 +204,14 @@ li {
 }
 
 /* Projects Styling */
+.link-p {
+  color: var(--text);
+}
+
+.link-p:hover {
+  color: var(--tertiary);
+}
+
 .item1-p {
   grid-area: AI;
 }
