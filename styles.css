@@ -203,6 +203,10 @@ li {
   }
 }
 
+.btn-secondary {
+  background: var(--tertiary);
+}
+
 /* Projects Styling */
 .link-p {
   color: var(--text);
