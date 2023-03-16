@@ -26,6 +26,7 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   padding: 0.5%;
+  width: 100%;
 }
 
 h2 {
@@ -79,6 +80,7 @@ figcaption {
   grid-area: info4;
 }
 
+/* Default is for mobile screens */
 .grid-a {
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -101,17 +103,21 @@ figcaption {
 }
 
 /* Navbar Styling */
-li {
+/* li {
   display: flex;
-}
+} */
 
+/* Default is for smaller mobile screens */
 .flex-container {
-  display: flex;
+  display: flex-wrap;
   background-color: var(--primary);
   justify-content: center;
+  list-style-type: none;
+  padding: 0;
 }
 
 .flex-item {
+  display: flex;
   background-color: var(--primary);
   border-style: solid;
   border-color: var(--primary);
@@ -119,6 +125,13 @@ li {
   padding: 20px;
   text-decoration: none;
   color: var(--text);
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .flex-container {
+    display: flex;
+  }
 }
 
 .flex-item:hover {
@@ -139,11 +152,22 @@ li {
 }
 
 /* Contact Styling */
+
+/* Default is for mobile screens */
 .form-container {
-  width: 400px;
+  width: 100%;
   margin: 1rem auto;
   padding: 2%;
   background-color: var(--primary);
+}
+
+@media (min-width: 414px) {
+  .form-container {
+    width: 400px;
+    margin: 1rem auto;
+    padding: 2%;
+    background-color: var(--primary);
+  }
 }
 
 /* Previous Work Styling */
