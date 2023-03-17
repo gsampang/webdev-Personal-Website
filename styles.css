@@ -41,6 +41,10 @@ h2 {
   background-color: var(--primary);
 }
 
+.project-img {
+  width: 100%;
+}
+
 figcaption {
   font-style: italic;
 }
@@ -53,7 +57,6 @@ figcaption {
 }
 
 /* About Styling */
-
 .headshot {
   display: block;
   border-radius: 50%;
@@ -103,13 +106,10 @@ figcaption {
 }
 
 /* Navbar Styling */
-/* li {
-  display: flex;
-} */
-
 /* Default is for smaller mobile screens */
 .flex-container {
-  display: flex-wrap;
+  display: flex;
+  flex-wrap: wrap;
   background-color: var(--primary);
   justify-content: center;
   list-style-type: none;
@@ -130,7 +130,7 @@ figcaption {
 
 @media (min-width: 768px) {
   .flex-container {
-    display: flex;
+    flex-wrap: nowrap;
   }
 }
 
@@ -152,7 +152,6 @@ figcaption {
 }
 
 /* Contact Styling */
-
 /* Default is for mobile screens */
 .form-container {
   width: 100%;
